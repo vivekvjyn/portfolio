@@ -1,0 +1,115 @@
+@media (max-width: 1200px) {
+  .sidebar {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .social-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .social-link {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 900px) {
+  .timeline-track::before {
+    left: 14px;
+  }
+
+  .timeline-entry {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .event-date {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 2.5rem;
+  }
+
+  .event-dot {
+    right: auto;
+    left: -28px;
+    top: 4px;
+  }
+
+  .event-card {
+    margin-left: 2.5rem;
+  }
+
+  .photo-entry-wrapper {
+    display: none;
+  }
+
+  .wiki-image {
+    height: 160px;
+  }
+
+  .journal-container {
+    padding: 3rem 1rem;
+  }
+
+  .journal-header {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .journal-header h1 {
+    font-size: 3rem;
+    text-shadow: 3px 3px 0 var(--accent-pink);
+  }
+}
+
+@media (max-width: 600px) {
+  .journal-header h1 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 0 var(--accent-pink);
+  }
+
+  .event-card {
+    padding: 1.25rem;
+  }
+
+  .photo-card {
+    padding: 8px 8px 40px 8px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-group {
+    justify-content: center;
+  }
+
+  .sort-btn {
+    width: 100%;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+  }
+
+  .nav-btn {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
+  .social-link {
+    width: 44px;
+    height: 44px;
+  }
+}
