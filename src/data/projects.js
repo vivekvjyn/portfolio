@@ -54,7 +54,7 @@ const projects = [
   {
     name: 'Sound of Music',
     description: 'Sound of Music is a multiband bit crusher plugin with three bands, allowing detailed audio control and manipulation.',
-    url: 'https://github.com/coconut-audio/Sound-of-Music/releases/tag/v1.0.0',
+    url: 'https://github.com/vivekvjyn/Sound-of-Music/releases/tag/v1.0.0',
     label: 'View Release →',
     tag: 'VST',
     image: 'https://codeberg.org/Coconut-Audio/Sound-of-Music/media/branch/main/screenshot.png',
@@ -69,10 +69,10 @@ const projects = [
   {
     name: 'Pulp Fiction',
     description: 'Multi FX rack plugin with four slots, allowing users to choose audio effects for each slot from a drop-down menu.',
-    url: 'https://github.com/coconut-audio/Pulp-Fiction/releases/tag/tremolo',
+    url: 'https://github.com/vivekvjyn/Pulp-Fiction/releases/tag/tremolo',
     label: 'View Release →',
     tag: 'VST',
-    image: 'https://raw.githubusercontent.com/coconut-audio/Pulp-Fiction/main/screenshot.png',
+    image: 'https://raw.githubusercontent.com/vivekvjyn/Pulp-Fiction/main/screenshot.png',
     tools: [
       { name: 'C++', icon: 'cplusplus' },
       { name: 'JUCE', icon: 'juce', custom: 'https://juce.com/wp-content/uploads/2026/03/JUCE-slice-min.svg' },
@@ -83,7 +83,7 @@ const projects = [
   {
     name: 'Intellectual Gate',
     description: 'Plugin that lets you remove drum bleed without compromising punch.',
-    url: 'https://github.com/coconut-audio/Intellectual-Gate/releases/tag/v1.0.0',
+    url: 'https://github.com/vivekvjyn/Intellectual-Gate/releases/tag/v1.0.0',
     label: 'View Release →',
     tag: 'VST',
     image: 'https://codeberg.org/Coconut-Audio/Intellectual-Gate/media/branch/main/screenshot.png',
@@ -118,10 +118,10 @@ const projects = [
   {
     name: 'Old Guitarist',
     description: 'Physically modeled virtual guitar plugin using finite difference method.',
-    url: 'https://github.com/coconut-audio/Old-Guitarist',
+    url: 'https://github.com/vivekvjyn/Old-Guitarist',
     label: 'View on GitHub →',
     tag: 'VST',
-    image: 'https://github.com/coconut-audio/Old-Guitarist/raw/main/screenshot.png',
+    image: 'https://github.com/vivekvjyn/Old-Guitarist/raw/main/screenshot.png',
     tools: [
       { name: 'C++', icon: 'cplusplus' },
       { name: 'CMake', icon: 'cmake' },
