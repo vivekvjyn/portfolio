@@ -18,3 +18,7 @@ npm install tailwindcss @tailwindcss/postcss postcss
 # make changes
 npm run build
 ```
+
+## License
+
+This project is licensed under the GNU General Public License. See the LICENSE for details.
