@@ -97,7 +97,7 @@ const projects = [
   },
   {
     name: 'GeoSynth',
-    description: 'Sonification of geolocation using an autoencoder with Freesound AI.',
+    description: 'Sonification of geolocations using an autoencoder, with data collected via Freesound API.',
     url: 'https://geosynth.vivekvjyn.xyz/',
     label: 'Visit Website →',
     tag: 'Website',
