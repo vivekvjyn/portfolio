@@ -15,7 +15,7 @@ export default function Header({ activeTab, setActiveTab }) {
         >
           Portfolio
         </button>
-        <a href="/resume.pdf" download className="nav-btn resume-btn">Resume</a>
+        <a href="https://mega.nz/file/krlWWZJR#msNHGV-cG-aB5yFexisRKuoDa75r2gguCm1OSvCjnm8" target="_blank" rel="noopener noreferrer" className="nav-btn resume-btn">Resume</a>
       </nav>
     </header>
   );
