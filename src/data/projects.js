@@ -97,7 +97,7 @@ const projects = [
   },
   {
     name: 'GeoSynth',
-    description: 'A web app that maps geographical locations to musical notes, turning maps into playable instruments.',
+    description: 'Sonification of geolocation using an autoencoder with Freesound AI.',
     url: 'https://geosynth.vivekvjyn.xyz/',
     label: 'Visit Website →',
     tag: 'Website',
