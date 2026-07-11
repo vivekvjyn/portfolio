@@ -1,16 +1,4 @@
 import WikiCard from './WikiCard';
-import PhotoCard from './PhotoCard';
-
-import babyBoyImg from '../assets/images/BabyBoy.jpg';
-import teenBoyImg from '../assets/images/TeenBoy.jpg';
-import bigBoyImg from '../assets/images/BigBoy.jpg';
-import dondeTitoImg from '../assets/images/DondeTito.jpg';
-import ovellaNegraImg from '../assets/images/OvellaNegra.jpg';
-import kochiImg from '../assets/images/Kochi.jpg';
-import pookieImg from '../assets/images/Pookie.jpg';
-import guitarImg from '../assets/images/Guitar.jpg';
-import templePondImg from '../assets/images/TemplePond.jpg';
-import onamBoyImg from '../assets/images/OnamBoy.jpg';
 
 function JournalEntry({ date, text, wikiSearchTerm }) {
   return (
@@ -31,15 +19,6 @@ function JournalEntry({ date, text, wikiSearchTerm }) {
   );
 }
 
-function PhotoEntry({ imageSrc, imageExtra, height, heightExtra }) {
-  return (
-    <div className="photo-entry-wrapper">
-      {imageSrc && <PhotoCard imageSrc={imageSrc} height={height} />}
-      {imageExtra && <PhotoCard imageSrc={imageExtra} height={heightExtra || height} />}
-    </div>
-  );
-}
-
 export default function Timeline() {
   return (
     <main className="timeline-track">
@@ -48,8 +27,6 @@ export default function Timeline() {
         text="Vivek was born in Riyadh, Kingdom of Saudi Arabia, to his parents, Vijayamma V. T. and T. Vijayan. He spent his early years as a child with his mother, who worked as a nurse in Riyadh."
         wikiSearchTerm="Riyadh"
       />
-
-      <PhotoEntry imageSrc={babyBoyImg} height="16"/>
 
       <JournalEntry
         date="2004"
@@ -83,8 +60,6 @@ export default function Timeline() {
         }
         wikiSearchTerm="Thrikodithanam Mahavishnu Temple"
       />
-
-      <PhotoEntry imageSrc={teenBoyImg} height="16.5"/>
 
       <JournalEntry
         date="2013"
@@ -180,8 +155,6 @@ export default function Timeline() {
         wikiSearchTerm="Chengannur"
       />
 
-      <PhotoEntry imageSrc={bigBoyImg} height="16" imageExtra={onamBoyImg} heightExtra="15.5"/>
-
       <JournalEntry
         text={
           <div className="journal-entry">
@@ -243,8 +216,6 @@ export default function Timeline() {
         wikiSearchTerm="Barcelona"
       />
 
-      <PhotoEntry imageSrc={dondeTitoImg} height="16.5" imageExtra={pookieImg} heightExtra="15"/>
-
       <JournalEntry
         date="2025"
         text={
@@ -284,10 +255,7 @@ export default function Timeline() {
             , and open datasets. During this time, he also picked up the guitar.
           </div>
         }
-        wikiSearchTerm="El Poblenou"
       />
-
-      <PhotoEntry imageSrc={guitarImg} height="15.5" imageExtra={ovellaNegraImg} heightExtra="17"/>
 
       <JournalEntry
         date="2026"
@@ -320,8 +288,6 @@ export default function Timeline() {
         wikiSearchTerm="Chennai"
       />
 
-      <PhotoEntry imageSrc={kochiImg} height="15" imageExtra={templePondImg} heightExtra="16"/>
-
       <JournalEntry
         text={
           <div className="journal-entry">
@@ -334,14 +300,13 @@ export default function Timeline() {
               Self-supervised Learning
             </a>
             {" "}framework to learn representations of svaras without annotated datasets.
-            The paper was presented at the{" "}
+            The paper was published by the{" "}
             <a href="https://dlfm.web.ox.ac.uk/" target="_blank" rel="noopener noreferrer">
               13th International Conference on Digital Libraries for Musicology
             </a>
-            {" "}in Thessaloniki, Greece.
+            .
           </div>
         }
-        wikiSearchTerm="Thessaloniki"
       />
     </main>
   );

@@ -14,8 +14,8 @@
   }
 
   .social-link {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
   }
 }
 
@@ -45,10 +45,6 @@
     margin-left: 2.5rem;
   }
 
-  .photo-entry-wrapper {
-    display: none;
-  }
-
   .wiki-image {
     height: 160px;
   }
@@ -63,23 +59,19 @@
   }
 
   .journal-header h1 {
-    font-size: 3rem;
-    text-shadow: 3px 3px 0 var(--accent-pink);
+    font-size: 2.5rem;
+    text-shadow: 0 0 30px var(--accent-glow);
   }
 }
 
 @media (max-width: 600px) {
   .journal-header h1 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 0 var(--accent-pink);
+    font-size: 2rem;
+    text-shadow: 0 0 20px var(--accent-glow);
   }
 
   .event-card {
     padding: 1.25rem;
-  }
-
-  .photo-card {
-    padding: 8px 8px 40px 8px;
   }
 
   .portfolio-grid {
@@ -105,11 +97,11 @@
 
   .nav-btn {
     padding: 0.6rem 1.25rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
   .social-link {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
   }
 }

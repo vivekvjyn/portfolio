@@ -16,31 +16,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   text-decoration: none;
-  border-radius: 12px;
-  background: #fff;
-  border: 3px solid var(--border-thick);
-  box-shadow: 3px 3px 0 var(--accent-hot);
-  transition: all 0.15s ease;
+  border-radius: 10px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  transition: all 0.2s ease;
 }
 
 .social-link:hover {
-  transform: translate(-2px, -2px);
-  background: var(--accent-pink);
-  box-shadow: 5px 5px 0 var(--border-thick);
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+  background: rgba(0, 212, 255, 0.1);
 }
 
 .social-link:hover svg,
 .social-link:hover img {
   filter: brightness(0) invert(1);
+  opacity: 1;
 }
 
 .social-link svg,
 .social-link img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: block;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
 }
-
