@@ -19,7 +19,6 @@
   font-weight: 700;
   color: var(--text-primary);
   letter-spacing: -0.02em;
-  text-transform: uppercase;
 }
 
 .nav-buttons {
@@ -38,12 +37,11 @@
   font-weight: 500;
   font-size: 0.85rem;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   transition: all 0.2s ease;
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   cursor: pointer;
 }
@@ -51,22 +49,26 @@
 .nav-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
 }
 
 .nav-btn.active {
-  background: rgba(56, 189, 248, 0.06);
+  background: rgba(88, 166, 255, 0.1);
   color: var(--accent);
-  border-color: rgba(56, 189, 248, 0.2);
+  border-color: rgba(88, 166, 255, 0.25);
 }
 
 .nav-btn.resume-btn {
-  background: rgba(139, 92, 246, 0.06);
-  border-color: rgba(139, 92, 246, 0.2);
-  color: var(--accent-secondary);
+  background: rgba(188, 140, 255, 0.08);
+  border-color: rgba(188, 140, 255, 0.2);
+  color: var(--accent-purple);
 }
 
 .nav-btn.resume-btn:hover {
-  background: rgba(139, 92, 246, 0.1);
+  background: rgba(188, 140, 255, 0.12);
+  color: var(--accent-purple);
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 20px rgba(188, 140, 255, 0.15);
 }
 
 .journal-entry a {
@@ -78,5 +80,5 @@
 }
 
 .journal-entry a:hover {
-  color: var(--accent-teal);
+  color: var(--accent-purple);
 }

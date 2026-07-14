@@ -16,16 +16,16 @@ export default function ParticleBackground() {
 
     const createParticles = () => {
       particles = [];
-      const count = Math.floor((canvas.width * canvas.height) / 20000);
+      const count = Math.floor((canvas.width * canvas.height) / 25000);
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
-          size: Math.random() * 1.2 + 0.3,
-          speedX: (Math.random() - 0.5) * 0.15,
-          speedY: (Math.random() - 0.5) * 0.15,
-          opacity: Math.random() * 0.3 + 0.05,
-          color: '255, 255, 255',
+          size: Math.random() * 1.5 + 0.5,
+          speedX: (Math.random() - 0.5) * 0.1,
+          speedY: (Math.random() - 0.5) * 0.1,
+          opacity: Math.random() * 0.2 + 0.05,
+          color: '184, 134, 11',
         });
       }
     };

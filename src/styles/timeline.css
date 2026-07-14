@@ -48,16 +48,16 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--accent-purple);
   border: 2px solid var(--bg-primary);
-  box-shadow: 0 0 12px var(--accent-glow);
+  box-shadow: 0 0 12px rgba(188, 140, 255, 0.3);
   z-index: 2;
 }
 
 .event-card {
   background: var(--glass-bg);
   padding: 1.75rem;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid var(--card-border);
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
@@ -67,16 +67,15 @@
 }
 
 .event-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 30px var(--accent-glow);
-  transform: translateY(-2px);
+  border-color: rgba(88, 166, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .wiki-card {
   background: var(--glass-bg);
   border: 1px solid var(--card-border);
   padding: 1.25rem;
-  border-radius: 10px;
+  border-radius: 8px;
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
 }
@@ -89,7 +88,6 @@
   padding-bottom: 0.5rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
-  text-transform: uppercase;
   font-family: 'JetBrains Mono', monospace;
 }
 
@@ -97,7 +95,7 @@
   width: 100%;
   height: 140px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--card-border);
   margin-bottom: 0.75rem;
   background-color: var(--card-bg);

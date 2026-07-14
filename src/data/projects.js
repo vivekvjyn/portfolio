@@ -104,7 +104,7 @@ const projects = [
     tools: [
       { name: 'CSS', icon: 'css3', custom: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
       { name: 'Docker', icon: 'docker', custom: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg' },
-      { name: 'Flask', icon: 'flask', custom: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg' },
+      { name: 'Flask', icon: 'flask', custom: 'https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/flask.svg' },
       { name: 'Git', icon: 'git' },
       { name: 'HTML', icon: 'html5', custom: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
       { name: 'JavaScript', icon: 'javascript' },
