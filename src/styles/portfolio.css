@@ -19,31 +19,27 @@
 }
 
 .filter-btn {
-  padding: 0.5rem 1rem;
-  background: var(--glass-bg);
+  padding: 0.4rem 0.75rem;
+  background: transparent;
   color: var(--text-muted);
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  border: 1px solid var(--glass-border);
-  border-radius: 6px;
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--text-muted);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
+  text-transform: lowercase;
 }
 
 .filter-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  box-shadow: 0 0 16px var(--accent-glow);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .filter-btn.active {
-  background: rgba(88, 166, 255, 0.1);
-  color: var(--accent);
-  border-color: rgba(88, 166, 255, 0.25);
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
 }
 
 .sort-dropdown {
@@ -51,52 +47,44 @@
 }
 
 .sort-btn {
-  padding: 0.5rem 1rem;
-  background: var(--glass-bg);
+  padding: 0.4rem 0.75rem;
+  background: transparent;
   color: var(--text-muted);
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  border: 1px solid var(--glass-border);
-  border-radius: 6px;
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--text-muted);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   line-height: 1;
+  text-transform: lowercase;
 }
 
 .sort-btn::after {
   content: '';
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid var(--text-muted);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--text-muted);
   flex-shrink: 0;
   align-self: center;
 }
 
 .sort-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  box-shadow: 0 0 16px var(--accent-glow);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .sort-menu {
   position: absolute;
   top: calc(100% + 4px);
   right: 0;
-  background: rgba(13, 17, 23, 0.95);
-  border: 1px solid var(--glass-border);
-  border-radius: 6px;
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  background: var(--bg-primary);
+  border: 1px solid var(--text-muted);
   z-index: 50;
   overflow: hidden;
   min-width: 100%;
@@ -105,18 +93,18 @@
 .sort-option {
   display: block;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.75rem;
   background: transparent;
   color: var(--text-muted);
   font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.75rem;
-  letter-spacing: 0.05em;
   border: none;
-  border-bottom: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--text-muted);
   cursor: pointer;
   text-align: left;
-  transition: all 0.15s ease;
+  transition: all 0.1s ease;
+  text-transform: lowercase;
 }
 
 .sort-option:last-child {
@@ -124,18 +112,16 @@
 }
 
 .sort-option:hover {
-  background: rgba(88, 166, 255, 0.08);
-  color: var(--accent);
+  color: var(--text-primary);
 }
 
 .sort-option.active {
-  background: rgba(188, 140, 255, 0.08);
-  color: var(--accent-purple);
+  color: var(--text-primary);
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -143,53 +129,45 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding: 1.75rem;
-  background: var(--glass-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  box-shadow: var(--glass-shadow);
+  padding: 1.25rem;
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  border-left: 2px solid var(--text-primary);
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 
 .project-card:hover {
-  border-color: rgba(88, 166, 255, 0.15);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  transform: translateY(-2px);
+  border-color: var(--text-primary);
 }
 
 .project-image {
   width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid var(--card-border);
+  border: 1px solid var(--text-muted);
   margin-bottom: 0.25rem;
-  background: var(--card-bg);
 }
 
 .project-tag {
   display: inline-block;
   align-self: flex-start;
-  padding: 0.25rem 0.6rem;
-  background: rgba(188, 140, 255, 0.08);
-  color: var(--accent-purple);
+  padding: 0.2rem 0.5rem;
   font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  border-radius: 4px;
-  border: 1px solid rgba(188, 140, 255, 0.15);
+  font-weight: 400;
+  border: 1px solid var(--text-muted);
+  color: var(--text-muted);
+  text-transform: lowercase;
 }
 
 .project-name {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   margin: 0;
   color: var(--text-primary);
+  text-transform: lowercase;
 }
 
 .project-desc {
@@ -207,31 +185,30 @@
   align-items: center;
 }
 
-.project-tools img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  transition: all 0.2s ease;
+.project-tools i {
+  font-size: 24px;
+  color: initial !important;
+  transition: all 0.1s ease;
 }
 
-.project-tools img:hover {
-  transform: scale(1.1);
+.logo-invert {
+  filter: invert(1);
 }
 
 .tools-overflow {
   font-size: 0.7rem;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .project-link {
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--text-primary);
   margin-top: auto;
-  transition: color 0.2s ease;
+  text-transform: lowercase;
 }
 
 .project-link:hover {
-  color: var(--accent-purple);
+  text-decoration: underline;
 }

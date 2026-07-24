@@ -15,35 +15,25 @@
 .social-link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
+  gap: 0.25rem;
   text-decoration: none;
-  border-radius: 10px;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  transition: all 0.2s ease;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: all 0.1s ease;
+  white-space: nowrap;
+}
+
+.social-prefix {
+  opacity: 0;
+  transition: opacity 0.1s ease;
 }
 
 .social-link:hover {
-  border-color: var(--accent);
-  box-shadow: 0 4px 16px var(--accent-glow);
-  background: rgba(184, 134, 11, 0.08);
+  color: var(--text-primary);
 }
 
-.social-link:hover svg,
-.social-link:hover img {
-  filter: brightness(0) saturate(100%);
+.social-link:hover .social-prefix {
   opacity: 1;
-}
-
-.social-link svg,
-.social-link img {
-  width: 20px;
-  height: 20px;
-  display: block;
-  opacity: 0.7;
-  transition: all 0.2s ease;
 }

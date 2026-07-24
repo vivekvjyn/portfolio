@@ -14,14 +14,14 @@
   }
 
   .social-link {
-    width: 44px;
-    height: 44px;
+    width: 36px;
+    height: 36px;
   }
 }
 
 @media (max-width: 900px) {
   .timeline-track::before {
-    left: 14px;
+    display: none;
   }
 
   .timeline-entry {
@@ -32,48 +32,37 @@
   .event-date {
     text-align: left;
     padding-top: 0;
-    padding-left: 2.5rem;
+    padding-left: 2rem;
   }
 
   .event-dot {
-    right: auto;
-    left: -28px;
-    top: 4px;
+    display: none;
   }
 
   .event-card {
-    margin-left: 2.5rem;
+    margin-left: 0;
   }
 
   .timeline-wiki {
-    margin-left: 2.5rem;
-  }
-
-  .wiki-image {
-    height: 160px;
+    margin-left: 0;
   }
 
   .journal-container {
-    padding: 3rem 1rem;
-  }
-
-  .journal-header {
-    padding-bottom: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .journal-header h1 {
-    font-size: 2.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media (max-width: 600px) {
   .journal-header h1 {
-    font-size: 2rem;
+    font-size: 1.1rem;
   }
 
   .event-card {
-    padding: 1.25rem;
+    padding: 0.75rem;
   }
 
   .portfolio-grid {
@@ -98,12 +87,12 @@
   }
 
   .nav-btn {
-    padding: 0.6rem 1.25rem;
+    padding: 0.4rem 0.75rem;
     font-size: 0.75rem;
   }
 
   .social-link {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 }

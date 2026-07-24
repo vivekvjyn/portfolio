@@ -1,84 +1,71 @@
 .journal-container {
-  max-width: 1200px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   position: relative;
   z-index: 1;
 }
 
 .journal-header {
-  text-align: center;
-  padding-bottom: 3rem;
-  margin-bottom: 4rem;
+  text-align: left;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .journal-header h1 {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 3rem;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 1.5rem;
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--text-primary);
-  letter-spacing: -0.02em;
+  text-transform: lowercase;
 }
 
 .nav-buttons {
   display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  margin-top: 1.5rem;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .nav-btn {
   display: inline-block;
-  padding: 0.75rem 1.75rem;
-  background: var(--glass-bg);
-  color: var(--text-secondary);
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 400;
   font-size: 0.85rem;
   text-decoration: none;
-  border-radius: 6px;
-  border: 1px solid var(--glass-border);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  transition: all 0.2s ease;
-  letter-spacing: 0.05em;
+  border: 1px solid var(--text-muted);
+  transition: all 0.1s ease;
   cursor: pointer;
+  text-transform: lowercase;
 }
 
 .nav-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-  box-shadow: 0 0 20px var(--accent-glow);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .nav-btn.active {
-  background: rgba(88, 166, 255, 0.1);
-  color: var(--accent);
-  border-color: rgba(88, 166, 255, 0.25);
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
 }
 
 .nav-btn.resume-btn {
-  background: rgba(188, 140, 255, 0.08);
-  border-color: rgba(188, 140, 255, 0.2);
-  color: var(--accent-purple);
-}
-
-.nav-btn.resume-btn:hover {
-  background: rgba(188, 140, 255, 0.12);
-  color: var(--accent-purple);
-  border-color: var(--accent-purple);
-  box-shadow: 0 0 20px rgba(188, 140, 255, 0.15);
+  border-style: dashed;
 }
 
 .journal-entry a {
-  color: var(--accent);
+  color: var(--text-primary);
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.15s ease;
-  border-bottom: none;
+  border-bottom: 1px dashed var(--text-muted);
+  transition: all 0.1s ease;
 }
 
 .journal-entry a:hover {
-  color: var(--accent-purple);
+  border-bottom-color: var(--text-primary);
+  border-bottom-style: solid;
 }

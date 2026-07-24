@@ -1,7 +1,7 @@
 export default function Header({ activeTab, setActiveTab }) {
   return (
     <header className="journal-header">
-      <h1>Vivek Vijayan</h1>
+      <h1>> vivek vijayan</h1>
       <nav className="nav-buttons">
         <button
           className={`nav-btn ${activeTab === 'timeline' ? 'active' : ''}`}
